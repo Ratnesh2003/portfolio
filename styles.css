@@ -93,7 +93,7 @@ button:hover {
 .name {
     font-size: 4.2rem;
     font-family: "Poppins";
-    color: whitesmoke;
+    color:#0088a9;
     font-weight: 600;
 }
 
@@ -231,7 +231,7 @@ button:hover {
 }
 
 .achievement-img {
-    width: 30%;
+    width: 35%;
     border: 4px solid #0088a9;
     border-radius: 50%;
 }
@@ -241,3 +241,15 @@ button:hover {
     text-align: center;
 }
 
+.achievement h4 {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-family: "Poppins";
+    color: whitesmoke;
+}
+
+.achievement p {
+    font-size: 1.1rem;
+    font-family: "Poppins";
+    color: #cedbf0;
+}
