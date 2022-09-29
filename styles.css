@@ -2,6 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* background-color: #24252A; */
+}
+
+body {
     background-color: #24252A;
 }
 
@@ -125,8 +129,6 @@ button:hover {
     border-radius: 50%;
     float: left;
     margin-right: 30px;
-
-
 }
 
 .about-text {
@@ -134,4 +136,40 @@ button:hover {
     font-size: 1.5rem;
     line-height: 2.4rem;
 }
+
+/* Skills Section */
+
+.heading {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.skill {
+    /* padding-left: 200px; */
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.skill-card {
+    margin: 25px;
+    background-color:white;
+    box-shadow: 0 4px 8px 0 ;
+    transition: 0.3s;
+    width: 30%;
+    border-radius: 5px;
+    
+}
+
+
+.skill-image {
+    width: 100%;
+}
+
+
 
