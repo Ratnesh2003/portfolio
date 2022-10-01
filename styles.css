@@ -16,6 +16,8 @@ body {
     color: #edf0f1;
 }
 
+
+
 .navbar-items-test {
     display: flex;
 }
@@ -44,12 +46,12 @@ body {
     display: none;
 }
 
-.navbar-link-toggle-id-test:checked ~ .navbar-items-right-test {
+.navbar-link-toggle-id-test:checked~.navbar-items-right-test {
     display: flex;
     margin-left: auto;
 }
 
-.navbar-link-toggle-id-test:checked ~ .navbar-items-right-test {
+.navbar-link-toggle-id-test:checked~.navbar-items-right-test {
     text-align: right;
     padding-top: 1.2rem
 }
@@ -57,7 +59,9 @@ body {
 
 
 @media only screen and (max-width: 800px) {
-    .navbar-items-test, .navbar-test {
+
+    .navbar-items-test,
+    .navbar-test {
         flex-direction: column;
     }
 
@@ -76,13 +80,12 @@ body {
         cursor: pointer;
     }
 
-    
+
 }
 
 
 /* Navigation Bar */
 
-li,
 a,
 button {
     font-family: "Poppins";
@@ -90,6 +93,7 @@ button {
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
+    margin-bottom: 4px;
 }
 
 header {
@@ -252,9 +256,11 @@ button:hover {
 }
 
 .skill-content p {
-    padding-top: 1rem;
+    padding: 2rem 1rem 1rem;
+    /* padding-top: 1rem; */
     font-size: 1.1rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Poppins";
+    background-color: #edf0f1;
 }
 
 
@@ -294,9 +300,10 @@ button:hover {
 }
 
 .projects-content p {
-    padding-top: 1rem;
+    padding: 2rem 1rem 1rem;
+    /* padding-top: 1rem; */
+    /* background-color: #edf0f1; */
     font-size: 1.1rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Achievements Section */
@@ -373,6 +380,7 @@ button:hover {
         text-align: center;
         /* width: 90%; */
     }
+
     .about-content img {
         width: 90%;
         /* margin-left:auto; */
@@ -386,7 +394,7 @@ button:hover {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
     .achievement {
@@ -399,7 +407,7 @@ button:hover {
     }
 }
 
-@media (max-width: 1244px ) and (min-width: 800px) {
+@media (max-width: 1244px) and (min-width: 800px) {
     .skill-card {
         margin: 25px;
         background-color: white;
