@@ -7,7 +7,70 @@
 
 body {
     background-color: #24252A;
+    font-family: "Poppins";
 }
+
+.navbar-test {
+    display: flex;
+    padding: 1.2rem;
+    color: #edf0f1;
+}
+
+.navbar-items-test {
+    display: flex;
+}
+
+.navbar-link-test {
+    padding-right: 1.4rem;
+}
+
+.navbar-items-right-test {
+    margin-left: auto;
+}
+
+.navbar-link-toggle-test {
+    display: none;
+}
+
+.navbar-link-toggle-id-test {
+    display: none;
+}
+
+.navbar-link-toggle-id-test:checked ~ .navbar-items-right-test {
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar-link-toggle-id-test:checked ~ .navbar-items-right-test {
+    text-align: right;
+    padding-top: 1.2rem
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .navbar-items-test, .navbar-test {
+        flex-direction: column;
+    }
+
+    .navbar-items-test {
+        display: none;
+    }
+
+    .navbar-items-right-test {
+        margin-left: 0;
+    }
+
+    .navbar-link-toggle-test {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    
+}
+
 
 /* Navigation Bar */
 
@@ -135,7 +198,7 @@ button:hover {
 
 .about-text {
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2.4rem;
 }
 
@@ -299,12 +362,15 @@ button:hover {
 
     .about-content {
         text-align: center;
+        width: 90%;
     }
     .about-content img {
-        /* display: inline-block; */
-        width: 80%;
-        ;
-        
+        width: 90%;
+        padding: 0 auto;
+    }
+
+    .navbar-link-test {
+        padding-right: 0;
     }
 }
 
